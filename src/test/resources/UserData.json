@@ -1,0 +1,21 @@
+{
+	"firstName": "Ericka",
+	"lastName": "Bindon",
+	"email": "ebindon0@google.ca",
+	"password": "123456",
+	"dob": {
+		"day": "11",
+		"month": "October",
+		"year": "2000"
+	},
+	"subjects": [
+		{
+			"math": "1",
+			"physic": "2"
+		},
+		{
+			"math": "3",
+			"physic": "4"
+		}
+	]
+}

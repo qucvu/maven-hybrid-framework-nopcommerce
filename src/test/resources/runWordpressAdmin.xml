@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<suite name="Wordpress - Admin">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ExtentReportListenerV5" />
+	</listeners>
+	<parameter name="urlAdmin" value="http://wordpress-automation-geni.com/vunguyen/wp-admin" />
+	<parameter name="urlUser" value="http://wordpress-automation-geni.com/vunguyen" />
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!--			<class name="com.wordpress.commons.Common_01_Login_Admin" />-->
+			<!--			<class name="com.wordpress.admin.Post_01_Create_Search_Read_Delete_Update" />-->
+		</classes>
+		<packages>
+			<package name="com.wordpress.admin" />
+		</packages>
+	</test>
+</suite>
