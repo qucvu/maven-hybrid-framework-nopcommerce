@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <suite name="NopCommerce - User">
-	<listeners>
-		<listener class-name="commons.MethodListener" />
-		<!--		<listener class-name="reportConfig.ReportNGListener" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV2" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV3" />-->
-		<!--		<listener class-name="reportConfig.ExtentReportListenerV4" />-->
-		<listener class-name="reportConfig.ExtentReportListenerV5" />
-		<!--		<listener class-name="reportConfig.AllureTestListener" />-->
-		<!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
-		<!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
-	</listeners>
-	<parameter name="firstName" value="Quoc Vu" />
-	<test name="Run on FIREFOX">
-		<parameter name="browser" value="firefox" />
-		<classes>
-			<class name="com.nopcommerce.common.Common_01_Register_Cookie" />
-			<class name="com.nopcommerce.user.WishList_Compare_RecentView" />
-		</classes>
-	</test>
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <!--		<listener class-name="reportConfig.ReportNGListener" />-->
+        <!--		<listener class-name="reportConfig.ExtentReportListenerV2" />-->
+        <!--		<listener class-name="reportConfig.ExtentReportListenerV3" />-->
+        <!--		<listener class-name="reportConfig.ExtentReportListenerV4" />-->
+        <listener class-name="reportConfig.ExtentReportListenerV5"/>
+        <!--		<listener class-name="reportConfig.AllureTestListener" />-->
+        <!--		<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
+        <!--		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
+    </listeners>
+    <!--    <parameter name="firstName" value="Quoc Vu"/>-->
+    <!--    <parameter name="enviroment" value="dev"/>-->
+    <test name="Run on FIREFOX">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <!--            <class name="com.nopcommerce.common.Common_01_Register_Cookie"/>-->
+            <class name="com.nopcommerce.pratice.Level_27_Multiple_Enviroment_Owner"/>
+        </classes>
+    </test>
 </suite>
